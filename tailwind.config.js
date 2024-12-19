@@ -36,7 +36,7 @@ module.exports = {
       colors: {
         primary: "#FF5E14",
         title: "#0E121D",
-        body: "#4D5765",
+        body: "#222222",
         border: "#E4E4E4",
       },
       keyframes: {
