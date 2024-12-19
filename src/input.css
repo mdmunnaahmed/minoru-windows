@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-body font-normal text-base font-body leading-[1.75];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-title font-semibold font-heading;
+  }
+  h1 {
+    @apply leading-tight sm:leading-[1.17] xl:text-4xl lg:text-3xl sm:text-[36px] text-[30px] font-bold;
+  }
+  h2 {
+    @apply leading-[1.2] xl:text-3xl text-[28px] md:text-[36px] font-bold;
+  }
+  h3 {
+    @apply lg:text-2xl text-xl;
+  }
+  h3,
+  h4,
+  h5,
+  h5 {
+    @apply leading-[1.4];
+  }
+  a {
+    @apply hover:text-primary transition duration-300 ease-linear;
+  }
+}
