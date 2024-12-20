@@ -32,4 +32,10 @@
   a {
     @apply hover:text-primary transition duration-300 ease-linear;
   }
+  span {
+    @apply flex items-center;
+  }
+  span.text-center {
+    @apply justify-center
+  }
 }
