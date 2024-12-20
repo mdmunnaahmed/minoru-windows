@@ -781,6 +781,10 @@ span.text-center {
   margin-inline-start: 58px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -888,6 +892,10 @@ span.text-center {
 
 .w-\[236px\] {
   width: 236px;
+}
+
+.w-\[190px\] {
+  width: 190px;
 }
 
 .min-w-20 {
