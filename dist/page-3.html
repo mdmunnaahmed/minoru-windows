@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="demo" />
+  <meta name="keyword" content="demo" />
+  <meta name="author" content="Minoru" />
+
+  <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon" />
+  <!-- google font and icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- style css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Windows program</title>
+</head>
+
+<body>
+  <main class="pt-6 pb-6 bg-[#f0f0f0] h-dvh overflow-y-auto">
+
+    <div class="mx-auto w-[1350px]">
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">検査種別CD</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="1" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="" />
+        </div>
+
+        <div class="flex justify-around flex-grow">
+          <span class="translate-x-32">(基準値)</span>
+          <span class="translate-x-16">(公差)</span>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">周長基準区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="外" />
+        </div>
+
+        <div class="flex flex-grow gap-x-8 w-1/2">
+          <div class="flex basis-[65%]">
+            <span class="min-w-[200px] bg-[#77c8fd] px-1.5">大径</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff]"
+              value="內" />
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+              value="1,300.0" />
+          </div>
+
+          <div class="flex">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+            <span class="px-6 text-[30px] leading-3">~</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">検査基準区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="社内基準" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2 justify-between">
+          <div class="flex basis-[65%]">
+            <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">周長</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+              value="4,159" />
+            <span class="px-2 ps-3 text-[20px] leading-3">/</span>
+            <span class="px-2 text-[20px] leading-3">(</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+              value="" />
+            <span class="px-2 text-[20px] leading-3">)</span>
+          </div>
+
+          <div class="flex">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end text-red-500"
+              value="-3.0" />
+            <span class="px-6 text-[30px] leading-3">~</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="6.0" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">英文区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2">
+          <div class="flex basis-[68.9%]">
+            <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">真円度</span>
+          </div>
+
+          <div class="flex max-w-[35%]">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="6.5" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">検査基準区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="d1~d4" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2 justify-between">
+          <div class="flex basis-[65%]">
+            <span class="min-w-[200px] bg-[#77c8fd] px-1.5">大径</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff]"
+              value="" />
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+              value="" />
+          </div>
+
+          <div class="flex">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+            <span class="px-6 text-[30px] leading-3">~</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">検査書有無区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="1" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="有" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2 justify-between">
+          <div class="flex basis-[65%]">
+            <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">周長</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+              value="" />
+            <span class="px-2 ps-3 text-[20px] leading-3">/</span>
+            <span class="px-2 text-[20px] leading-3">(</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+              value="" />
+            <span class="px-2 text-[20px] leading-3">)</span>
+          </div>
+
+          <div class="flex">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+            <span class="px-6 text-[30px] leading-3">~</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">客先仕様区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2">
+          <div class="flex basis-[68.9%]">
+            <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">真円度</span>
+          </div>
+
+          <div class="flex max-w-[35%]">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">ミルシート区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="1" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="有" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2">
+          <div class="flex basis-[68.9%]">
+            <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">断面形状精度</span>
+          </div>
+
+          <div class="flex max-w-[35%]">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="13.0" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">製番单位発行区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="通常" />
+        </div>
+
+        <div class="flex flex-grow gap-x-8 w-1/2">
+          <div class="flex basis-[65%]">
+            <span class="min-w-[200px] bg-[#77c8fd] px-1.5">高さ</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff]"
+              value="內" />
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[100px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+              value="287.9" />
+          </div>
+
+          <div class="flex">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="0.0" />
+            <span class="px-6 text-[30px] leading-3">~</span>
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="13.0" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-1 gap-x-8 justify-between">
+        <div class="flex w-[44%]">
+          <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">高圧ガスラベル区分</span>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+            value="0" />
+          <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+          <input type="text"
+            class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[280px] h-auto border bg-[#feffff]"
+            value="否" />
+        </div>
+
+        <div class="flex flex-grow gap-x-0 w-1/2">
+          <div class="flex basis-[68.9%]">
+            <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">平たん</span>
+          </div>
+
+          <div class="flex max-w-[35%]">
+            <input type="text"
+              class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[80px] h-auto border bg-[#feffff] text-end"
+              value="0.0" />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+</body>
+
+</html>
