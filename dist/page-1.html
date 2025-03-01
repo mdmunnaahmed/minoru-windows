@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <main class="pt-6 pb-6 bg-[#f0f0f0]">
+  <main class="pt-6 pb-6 bg-[#f0f0f0] h-dvh overflow-y-auto">
     <div class="mx-auto w-fit">
 
       <div class="flex gap-x-8 justify-between">
@@ -130,79 +130,164 @@
         <table class="min-w-full border border-gray-400 text-sm text-left text-gray-700">
           <thead class="bg-gray-50 text-xs uppercase font-semibold text-gray-600">
             <tr>
-              <th class="border border-gray-300 px-2 py-1 font-normal">受注単価</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">納期</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">製番</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">得意先名</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">形状寸法</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">受注明数</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">必要</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">表面処理名</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">r(内半径)</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">糟</th>
-              <th class="border border-gray-300 px-2 py-1 font-normal">⊖1_1</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">拠点CD</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">拠点正式名</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">拠点名</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">郵便番号</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">住所1</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">住所2</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">電話番号</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">FAX番号</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">拠点グループCD</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-white hover:bg-gray-50">
-              <td class="border border-gray-300 px-2 py-1 text-end">65,300</td>
-              <td class="border border-gray-300 px-2 py-1">2025/01/17</td>
-              <td class="border border-gray-300 px-2 py-1">24120711</td>
-              <td class="border border-gray-300 px-2 py-1">鞆広島メタル...</td>
-              <td class="border border-gray-300 px-2 py-1">HH 350-3-SUS316L2B-I</td>
-              <td class="border border-gray-300 px-2 py-1">1</td>
-              <td class="border border-gray-300 px-2 py-1">2.3</td>
-              <td class="border border-gray-300 px-2 py-1">内外面#400</td>
-              <td class="border border-gray-300 px-2 py-1">0</td>
-              <td class="border border-gray-300 px-2 py-1">0</td>
-              <td class="border border-gray-300 px-2 py-1">0.0</td>
+            <tr class="bg-[#0377d1] text-white">
+              <td class="border border-gray-300 px-2 py-1">110</td>
+              <td class="border border-gray-300 px-2 py-1">|本社</td>
+              <td class="border border-gray-300 px-2 py-1">|本社</td>
+              <td class="border border-gray-300 px-2 py-1">555-0012</td>
+              <td class="border border-gray-300 px-2 py-1">大阪市西淀川...</td>
+              <td class="border border-gray-300 px-2 py-1">T4120001051010</td>
+              <td class="border border-gray-300 px-2 py-1">06-8472-4772</td>
+              <td class="border border-gray-300 px-2 py-1">06-8477-1490</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
             </tr>
             <tr class="bg-white hover:bg-gray-50">
-              <td class="border border-gray-300 px-2 py-1 text-end">303,000</td>
-              <td class="border border-gray-300 px-2 py-1">2025/01/14</td>
-              <td class="border border-gray-300 px-2 py-1">24120682</td>
-              <td class="border border-gray-300 px-2 py-1">鞆NYK西日...</td>
-              <td class="border border-gray-300 px-2 py-1">SMR-G600-SUS316L2B(窓無, 内面#4...</td>
-              <td class="border border-gray-300 px-2 py-1">2</td>
-              <td class="border border-gray-300 px-2 py-1">0.0</td>
-              <td class="border border-gray-300 px-2 py-1">内外面#400</td>
-              <td class="border border-gray-300 px-2 py-1">0</td>
-              <td class="border border-gray-300 px-2 py-1">0</td>
-              <td class="border border-gray-300 px-2 py-1">0.0</td>
+              <td class="border border-gray-300 px-2 py-1">310</td>
+              <td class="border border-gray-300 px-2 py-1">|関東営業所</td>
+              <td class="border border-gray-300 px-2 py-1">|関東営業所</td>
+              <td class="border border-gray-300 px-2 py-1">340-0022</td>
+              <td class="border border-gray-300 px-2 py-1">埼玉県豊加市...</td>
+              <td class="border border-gray-300 px-2 py-1">登録番号 T41...</td>
+              <td class="border border-gray-300 px-2 py-1">048-349-8305</td>
+              <td class="border border-gray-300 px-2 py-1">048-349-6518</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-[#fefccc]">
+              <td class="border border-gray-300 px-2 py-1">320</td>
+              <td class="border border-gray-300 px-2 py-1">|関西営業所</td>
+              <td class="border border-gray-300 px-2 py-1">|関西営業所</td>
+              <td class="border border-gray-300 px-2 py-1">555-0012</td>
+              <td class="border border-gray-300 px-2 py-1">大阪市西淀川...</td>
+              <td class="border border-gray-300 px-2 py-1">登録番号 T41...</td>
+              <td class="border border-gray-300 px-2 py-1">06-8471-6031</td>
+              <td class="border border-gray-300 px-2 py-1">06-8472-1396</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
             </tr>
             <tr class="bg-white hover:bg-gray-50">
-              <td class="border border-gray-300 px-2 py-1 text-end">96,900</td>
-              <td class="border border-gray-300 px-2 py-1">2025/01/09</td>
-              <td class="border border-gray-300 px-2 py-1">24120259</td>
-              <td class="border border-gray-300 px-2 py-1">阪和工材鞆/...</td>
-              <td class="border border-gray-300 px-2 py-1">SD 1000-3-20L-SUS3042B-X</td>
-              <td class="border border-gray-300 px-2 py-1">1</td>
-              <td class="border border-gray-300 px-2 py-1">2.2</td>
-              <td class="border border-gray-300 px-2 py-1">内面#400</td>
-              <td class="border border-gray-300 px-2 py-1">100</td>
-              <td class="border border-gray-300 px-2 py-1">0</td>
-              <td class="border border-gray-300 px-2 py-1">45.0</td>
+              <td class="border border-gray-300 px-2 py-1">330</td>
+              <td class="border border-gray-300 px-2 py-1">|九州営業所</td>
+              <td class="border border-gray-300 px-2 py-1">|九州営業所</td>
+              <td class="border border-gray-300 px-2 py-1">803-0801</td>
+              <td class="border border-gray-300 px-2 py-1">北九州市小倉...</td>
+              <td class="border border-gray-300 px-2 py-1">登録番号 T41...</td>
+              <td class="border border-gray-300 px-2 py-1">033-581-1480</td>
+              <td class="border border-gray-300 px-2 py-1">033-581-4476</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-[#fefccc]">
+              <td class="border border-gray-300 px-2 py-1">340</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸営業所</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸営業所</td>
+              <td class="border border-gray-300 px-2 py-1">324-0051</td>
+              <td class="border border-gray-300 px-2 py-1">石川県白山市...</td>
+              <td class="border border-gray-300 px-2 py-1">事業者登録番号...</td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1200</td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1831</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1">410</td>
+              <td class="border border-gray-300 px-2 py-1">|関東工場</td>
+              <td class="border border-gray-300 px-2 py-1">|関東工場</td>
+              <td class="border border-gray-300 px-2 py-1">300-0726</td>
+              <td class="border border-gray-300 px-2 py-1">茨城県稲敷市...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1">0239-78-3501</td>
+              <td class="border border-gray-300 px-2 py-1">0239-78-3554</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-[#fefccc]">
+              <td class="border border-gray-300 px-2 py-1">420</td>
+              <td class="border border-gray-300 px-2 py-1">|関西工場</td>
+              <td class="border border-gray-300 px-2 py-1">|関西工場</td>
+              <td class="border border-gray-300 px-2 py-1">555-0012</td>
+              <td class="border border-gray-300 px-2 py-1">大阪市西淀川...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1">06-8471-7454</td>
+              <td class="border border-gray-300 px-2 py-1">06-8472-1980</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1">430</td>
+              <td class="border border-gray-300 px-2 py-1">|九州 営業所</td>
+              <td class="border border-gray-300 px-2 py-1">|九州 営業所</td>
+              <td class="border border-gray-300 px-2 py-1">803-0801</td>
+              <td class="border border-gray-300 px-2 py-1">北九州市小倉...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1">033-581-1480</td>
+              <td class="border border-gray-300 px-2 py-1">033-581-4476</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-[#fefccc]">
+              <td class="border border-gray-300 px-2 py-1">440</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸営業所</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸営業所</td>
+              <td class="border border-gray-300 px-2 py-1">324-0051</td>
+              <td class="border border-gray-300 px-2 py-1">石川県白山市...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1200</td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1831</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1">450</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸プレス工...</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸プレス工場...</td>
+              <td class="border border-gray-300 px-2 py-1">324-0051</td>
+              <td class="border border-gray-300 px-2 py-1">石川県白山市...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1200</td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1831</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-[#fefccc]">
+              <td class="border border-gray-300 px-2 py-1">510</td>
+              <td class="border border-gray-300 px-2 py-1">|海外営業本部</td>
+              <td class="border border-gray-300 px-2 py-1">|海外営業本部</td>
+              <td class="border border-gray-300 px-2 py-1">555-0012</td>
+              <td class="border border-gray-300 px-2 py-1">大阪市西淀川...</td>
+              <td class="border border-gray-300 px-2 py-1">登録番号 T41...</td>
+              <td class="border border-gray-300 px-2 py-1">06-8472-4772</td>
+              <td class="border border-gray-300 px-2 py-1">06-8477-1490</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1">520</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸工場</td>
+              <td class="border border-gray-300 px-2 py-1">|北陸工場</td>
+              <td class="border border-gray-300 px-2 py-1">324-0051</td>
+              <td class="border border-gray-300 px-2 py-1">石川県白山市...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1">076-277-1200</td>
+              <td class="border border-gray-300 px-2 py-1">076-277-2021</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+            </tr>
+            <tr class="bg-[#fefccc]">
+              <td class="border border-gray-300 px-2 py-1">530</td>
+              <td class="border border-gray-300 px-2 py-1">|P& ENGINEERI...</td>
+              <td class="border border-gray-300 px-2 py-1">|P& ENGINEERING</td>
+              <td class="border border-gray-300 px-2 py-1">Land Plot CM...</td>
+              <td class="border border-gray-300 px-2 py-1">Ward, Hal An...</td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1"></td>
+              <td class="border border-gray-300 px-2 py-1"></td>
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div class="mt-2 flex">
-        <span class="w-[120px] bg-[#77c8fd] px-1.5">受注金額</span>
-        <input type="text"
-          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
-
-        <span class="w-[120px] bg-[#77c8fd] px-1.5 ms-2.5">税抜受注金額</span>
-        <input type="text"
-          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
-
-        <span class="w-[120px] bg-[#77c8fd] px-1.5 ms-2.5">受注消費稅額</span>
-        <input type="text"
-          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
-
-        <span class="w-[120px] bg-[#77c8fd] px-1.5 ms-2.5">税込受注金額</span>
-        <input type="text"
-          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
       </div>
     </div>
   </main>

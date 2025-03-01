@@ -845,6 +845,10 @@ span.text-center {
   height: auto;
 }
 
+.h-dvh {
+  height: 100dvh;
+}
+
 .max-h-fit {
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -1153,6 +1157,10 @@ span.text-center {
   overflow-x: auto;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1282,6 +1290,20 @@ span.text-center {
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#0377d1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 119 209 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#fefccc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 252 204 / var(--tw-bg-opacity));
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1393,6 +1415,11 @@ span.text-center {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .outline-none {
