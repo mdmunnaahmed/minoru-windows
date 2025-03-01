@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="demo" />
+  <meta name="keyword" content="demo" />
+  <meta name="author" content="Minoru" />
+
+  <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon" />
+  <!-- google font and icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- style css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Windows program</title>
+</head>
+
+<body>
+  <main class="pt-6 pb-6 bg-[#f0f0f0] h-dvh overflow-y-auto">
+
+    <div class="mx-auto w-[1350px]">
+
+      <div class="flex py-1 mb-6">
+
+        <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">処理区分</span>
+        <div class="flex items-center gap-2 ms-3">
+          <input type="radio" class="w-[18px] h-[18px]" id="radio1" name="radio-group-one">
+          <label for="radio1">
+            <span>新規</span>
+          </label>
+        </div>
+        <div class="flex items-center gap-2 ms-6">
+          <input type="radio" class="w-[18px] h-[18px]" id="radio2" name="radio-group-one">
+          <label for="radio2">
+            <span>再発行</span>
+          </label>
+        </div>
+      </div>
+
+
+      <div class="flex py-1">
+
+        <span class="min-w-[200px] bg-[#c0c0c0] px-1.5">受注抛点CD</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="320" />
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff]"
+          value="関西営業所" />
+      </div>
+
+
+      <div class="flex py-1">
+
+        <span class="min-w-[200px] bg-[#72cbfd] px-1.5">製造抛点CD</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff]"
+          value="" />
+      </div>
+
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] bg-[#72cbfd] px-1.5">売上担当者CD</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[350px] h-auto border bg-[#feffff]"
+          value="" />
+      </div>
+
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] bg-[#72cbfd] px-1.5">製</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+      </div>
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] text-[30px] leading-3 text-end p-1.5 flex items-center justify-end">~</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+      </div>
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] bg-[#72cbfd] px-1.5">受注日</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <span class="text-[30px] leading-3 text-end p-1.5 px-4 flex items-center justify-end">~</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+          value="" />
+      </div>
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] bg-[#72cbfd] px-1.5">更新一艹ID</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[200px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="11819" />
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] border-[#555] px-1.5 outline-none w-[350px] h-auto border bg-[#feffff]"
+          value="河村 寛子" />
+      </div>
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] bg-[#72cbfd] px-1.5">受注伝票発行日</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[60px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+          value="" />
+      </div>
+
+      <div class="flex py-1">
+        <span class="min-w-[200px] text-[30px] leading-3 text-end p-1.5 flex items-center justify-end">~</span>
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[120px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end"
+          value="" />
+        <input type="text"
+          class="focus:bg-[#fdfbcf] focus:border-[#0377d1] w-[60px] border-[#555] px-1.5 outline-none h-auto border bg-[#feffff] text-end"
+          value="" />
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
