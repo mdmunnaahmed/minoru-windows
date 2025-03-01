@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="demo" />
+  <meta name="keyword" content="demo" />
+  <meta name="author" content="Minoru" />
+
+  <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon" />
+  <!-- google font and icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- style css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Windows program</title>
+</head>
+
+<body>
+  <main class="pt-6 pb-6 bg-[#f0f0f0]">
+    <div class="mx-auto w-fit">
+
+      <div class="flex gap-x-8 justify-between">
+        <div>
+          <div class="flex py-1 gap-x-10 justify-between">
+            <div class="flex w-[50%]">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">拠点CD</span>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[60px] h-auto ms-2 border bg-[#feffff]"
+                value="" />
+            </div>
+
+            <div class="flex">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">受注抛点区分</span>
+              <input type="text"
+                class="w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end" value="1" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[220px] h-auto border bg-[#feffff]"
+                value="受注拠点である" />
+            </div>
+          </div>
+
+          <div class="flex py-1 gap-x-10 justify-between">
+            <div class="flex w-[50%]">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">抛点正式名*</span>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[350px] h-auto ms-2 border bg-[#feffff]"
+                value="" />
+            </div>
+
+            <div class="flex">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">製造抛点区分</span>
+              <input type="text"
+                class="w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end" value="" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[220px] h-auto border bg-[#feffff]"
+                value="" />
+            </div>
+          </div>
+
+          <div class="flex py-1 gap-x-10 justify-between">
+            <div class="flex w-[50%]">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">抛点名*</span>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[180px] h-auto ms-2 border bg-[#feffff]"
+                value="" />
+            </div>
+
+            <div class="flex">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">出荷抛点区分</span>
+              <input type="text"
+                class="w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end" value="" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[220px] h-auto border bg-[#feffff]"
+                value="" />
+            </div>
+          </div>
+
+          <div class="flex py-1 gap-x-10 justify-between">
+            <div class="flex w-[50%]">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">拠点グループCD</span>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[120px] h-auto ms-2 border bg-[#feffff]"
+                value="" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[220px] h-auto border bg-[#feffff]"
+                value="" />
+            </div>
+
+            <div class="flex">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">請求点区分</span>
+              <input type="text"
+                class="w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end" value="" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[220px] h-auto border bg-[#feffff]"
+                value="" />
+            </div>
+          </div>
+
+          <div class="flex py-1 gap-x-10 justify-between">
+            <div class="flex w-[50%]">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">事業部CD</span>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[120px] h-auto ms-2 border bg-[#feffff]"
+                value="" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[180px] h-auto border bg-[#feffff]"
+                value="" />
+            </div>
+
+            <div class="flex">
+              <span class="min-w-[200px] bg-[#77c8fd] px-1.5">支払拠点区分</span>
+              <input type="text"
+                class="w-[50px] border-[#555] px-1.5 outline-none h-auto ms-2 border bg-[#feffff] text-end" value="" />
+              <button class="bg-[#e5e5e5] border border-[#c4c4c4] w-[30px] mx-1">...</button>
+              <input type="text" class="border-[#555] px-1.5 outline-none w-[220px] h-auto border bg-[#feffff]"
+                value="" />
+            </div>
+          </div>
+        </div>
+
+        <button class="bg-[#e5e5e5] border border-[#c4c4c4] min-w-[100px] self-end me-4">実行</button>
+      </div>
+
+      <div class="overflow-x-auto border border-gray-400 mt-1 max-w-[1400px]">
+        <table class="min-w-full border border-gray-400 text-sm text-left text-gray-700">
+          <thead class="bg-gray-50 text-xs uppercase font-semibold text-gray-600">
+            <tr>
+              <th class="border border-gray-300 px-2 py-1 font-normal">受注単価</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">納期</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">製番</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">得意先名</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">形状寸法</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">受注明数</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">必要</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">表面処理名</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">r(内半径)</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">糟</th>
+              <th class="border border-gray-300 px-2 py-1 font-normal">⊖1_1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1 text-end">65,300</td>
+              <td class="border border-gray-300 px-2 py-1">2025/01/17</td>
+              <td class="border border-gray-300 px-2 py-1">24120711</td>
+              <td class="border border-gray-300 px-2 py-1">鞆広島メタル...</td>
+              <td class="border border-gray-300 px-2 py-1">HH 350-3-SUS316L2B-I</td>
+              <td class="border border-gray-300 px-2 py-1">1</td>
+              <td class="border border-gray-300 px-2 py-1">2.3</td>
+              <td class="border border-gray-300 px-2 py-1">内外面#400</td>
+              <td class="border border-gray-300 px-2 py-1">0</td>
+              <td class="border border-gray-300 px-2 py-1">0</td>
+              <td class="border border-gray-300 px-2 py-1">0.0</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1 text-end">303,000</td>
+              <td class="border border-gray-300 px-2 py-1">2025/01/14</td>
+              <td class="border border-gray-300 px-2 py-1">24120682</td>
+              <td class="border border-gray-300 px-2 py-1">鞆NYK西日...</td>
+              <td class="border border-gray-300 px-2 py-1">SMR-G600-SUS316L2B(窓無, 内面#4...</td>
+              <td class="border border-gray-300 px-2 py-1">2</td>
+              <td class="border border-gray-300 px-2 py-1">0.0</td>
+              <td class="border border-gray-300 px-2 py-1">内外面#400</td>
+              <td class="border border-gray-300 px-2 py-1">0</td>
+              <td class="border border-gray-300 px-2 py-1">0</td>
+              <td class="border border-gray-300 px-2 py-1">0.0</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="border border-gray-300 px-2 py-1 text-end">96,900</td>
+              <td class="border border-gray-300 px-2 py-1">2025/01/09</td>
+              <td class="border border-gray-300 px-2 py-1">24120259</td>
+              <td class="border border-gray-300 px-2 py-1">阪和工材鞆/...</td>
+              <td class="border border-gray-300 px-2 py-1">SD 1000-3-20L-SUS3042B-X</td>
+              <td class="border border-gray-300 px-2 py-1">1</td>
+              <td class="border border-gray-300 px-2 py-1">2.2</td>
+              <td class="border border-gray-300 px-2 py-1">内面#400</td>
+              <td class="border border-gray-300 px-2 py-1">100</td>
+              <td class="border border-gray-300 px-2 py-1">0</td>
+              <td class="border border-gray-300 px-2 py-1">45.0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-2 flex">
+        <span class="w-[120px] bg-[#77c8fd] px-1.5">受注金額</span>
+        <input type="text"
+          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
+
+        <span class="w-[120px] bg-[#77c8fd] px-1.5 ms-2.5">税抜受注金額</span>
+        <input type="text"
+          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
+
+        <span class="w-[120px] bg-[#77c8fd] px-1.5 ms-2.5">受注消費稅額</span>
+        <input type="text"
+          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
+
+        <span class="w-[120px] bg-[#77c8fd] px-1.5 ms-2.5">税込受注金額</span>
+        <input type="text"
+          class="border-[#555] px-1.5 outline-none w-[200px] h-auto border bg-[#feffff] ms-2.5 text-end" value="0" />
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
