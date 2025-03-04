@@ -885,6 +885,10 @@ span.text-center {
   margin-top: 1.75rem;
 }
 
+.ms-0 {
+  margin-inline-start: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -1117,6 +1121,26 @@ span.text-center {
 
 .w-\[160px\] {
   width: 160px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[144px\] {
+  width: 144px;
+}
+
+.w-\[184px\] {
+  width: 184px;
+}
+
+.w-\[134px\] {
+  width: 134px;
+}
+
+.w-\[380px\] {
+  width: 380px;
 }
 
 .min-w-20 {
@@ -1669,6 +1693,26 @@ span.text-center {
 }
 
 @media (min-width: 1400px) {
+  .xxl\:ms-12 {
+    margin-inline-start: 3rem;
+  }
+
+  .xxl\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .xxl\:w-\[222px\] {
+    width: 222px;
+  }
+
+  .xxl\:w-\[182px\] {
+    width: 182px;
+  }
+
+  .xxl\:w-\[428px\] {
+    width: 428px;
+  }
+
   .xxl\:max-w-\[1290px\] {
     max-width: 1290px;
   }
