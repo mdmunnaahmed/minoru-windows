@@ -6,6 +6,7 @@
   body {
     @apply text-body font-normal text-base font-body leading-[1.75];
   }
+
   h1,
   h2,
   h3,
@@ -14,28 +15,81 @@
   h6 {
     @apply text-title font-semibold font-heading;
   }
+
   h1 {
     @apply leading-tight sm:leading-[1.17] xl:text-4xl lg:text-3xl sm:text-[36px] text-[30px] font-bold;
   }
+
   h2 {
     @apply leading-[1.2] xl:text-3xl text-[28px] md:text-[36px] font-bold;
   }
+
   h3 {
     @apply lg:text-2xl text-xl;
   }
+
   h3,
   h4,
   h5,
   h5 {
     @apply leading-[1.4];
   }
+
   a {
     @apply hover:text-primary transition duration-300 ease-linear;
   }
+
   span {
     @apply flex items-center;
   }
+
   span.text-center {
     @apply justify-center
+  }
+
+  @media (max-width: 1370px) {
+    .page-three .min-w-\[200px\] {
+      min-width: 160px;
+    }
+
+    .page-three .basis-\[68\.9\%\] .min-w-\[200px\] {
+      min-width: 0px;
+      width: 120px;
+    }
+
+    .page-three .basis-\[65\%\] .min-w-\[200px\] {
+      min-width: 0px;
+      width: 120px;
+    }
+
+    .page-three .basis-\[68\.9\%\] {
+      flex-basis: 65%;
+      flex-basis: unset;
+      width: 65%;
+    }
+
+    .page-three .basis-\[65\%\] {
+      flex-basis: 60.8%;
+      flex-basis: unset;
+      width: 65%;
+    }
+
+    .flex.flex-grow.gap-x-0.w-1\/2.justify-between {
+      justify-content: flex-start;
+    }
+
+    .flex.flex-grow.gap-x-8.w-1\/2 {
+      gap: 0;
+    }
+
+    .page-three .w-\[280px\] {
+      /* width: 200px; */
+      max-width: 240px;
+      width: 100%;
+    }
+
+    .page-three .w-\[44\%\] {
+      width: 40%;
+    }
   }
 }
