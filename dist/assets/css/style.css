@@ -1115,6 +1115,10 @@ span.text-center {
   width: 100%;
 }
 
+.w-\[160px\] {
+  width: 160px;
+}
+
 .min-w-20 {
   min-width: 5rem;
 }
